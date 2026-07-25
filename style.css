@@ -169,6 +169,32 @@ main{
     color:#ddd;
 }
 
+/* Enigma */
+
+.riddle{
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#bca5ff;
+
+    opacity:.55;
+
+    letter-spacing:.5px;
+
+    font-style:italic;
+
+    margin:-20px 0 45px;
+
+}
+
+.riddle:hover{
+
+    opacity:.9;
+
+}
+
 /* PLAYER */
 
 #musicIntro{
