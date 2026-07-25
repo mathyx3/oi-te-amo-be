@@ -1,104 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Para você 💜</title>
 
     <link rel="icon" href="assets/images/favicon.png">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Tela inicial -->
-    <section id="intro">
+<section id="intro">
 
-        <div class="intro-box">
+    <div class="intro-box">
 
-            <h1>💜</h1>
+        <div class="heart">
+            💜
+        </div>
 
-            <h2>Para a pessoa que mudou minha vida.</h2>
+        <h1>Oi, meu amor.</h1>
 
-            <p>
-                Eu preparei uma pequena caixinha de memórias.
+        <p>
+            Eu preparei uma pequena caixinha de memórias.
+            <br><br>
+            Espero que você goste dela tanto quanto eu gostei de fazer.
+        </p>
+
+        <button id="startButton">
+            Abrir 💜
+        </button>
+
+    </div>
+
+</section>
+
+<main id="content">
+
+<section class="memory">
+
+    <h2>
+        Primeira lembrança 🎁
+    </h2>
+
+    <button class="reveal-btn">
+        Revelar
+    </button>
+
+    <div class="hidden-content">
+
+        <img
+        src="assets/images/presente.jpg"
+        alt="Presente">
+
+        <p>
+
+            eu sei que sempre falo isso, mas essa foi a coisa mais incrível que já recebi na minha vida, e aprecio mais ainda por ter vindo de você.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="memory">
+
+    <h2>
+
+        Segunda lembrança 🎀
+
+    </h2>
+
+    <button class="reveal-btn">
+
+        Revelar
+
+    </button>
+
+    <div class="hidden-content">
+
+        <img
+        src="assets/images/kitty.jpg"
+        alt="Hello Kitty">
+
+        <p>
+
+            por mais q a gnt não estávamos juntos na época, eu guardei isso como se fosse a coisa mais importante pra mim, pq eu gostava muito de vc, e receber isso me deixou de uma forma que ninguém nunca me viu.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section id="music">
+
+    <div id="musicIntro">
+
+        <h2>
+
+            💜 Tem mais uma coisinha...
+
+        </h2>
+
+        <p>
+
+            antes de terminar, queria te mostrar uma música.
+
+        </p>
+
+        <button id="openPlayer">
+
+            Abrir 🎵
+
+        </button>
+
+    </div>
+
+    <div id="spotifyPlayer">
+
+        <div class="playerCard">
+
+            <div class="albumCover">
+
+                🎵
+
+            </div>
+
+            <div class="songInfo">
+
+                <h3>
+
+                    Whisky e Teias
+
+                </h3>
+
+                <span>
+
+                    Anirap
+
+                </span>
+
+            </div>
+
+            <div class="controls">
+
+                <button id="playButton">
+
+                    ▶
+
+                </button>
+
+            </div>
+
+            <div class="progressContainer">
+
+                <span id="currentTime">
+
+                    0:00
+
+                </span>
+
+                <input
+                id="progress"
+                type="range"
+                value="0"
+                min="0"
+                max="100">
+
+                <span id="duration">
+
+                    0:00
+
+                </span>
+
+            </div>
+
+            <p class="musicText">
+
+                eu sei que essa música não tem muito haver, até pq nós não temos uma música nossa ainda.. mas eu gosto muito dela pq me faz lembrar de você e de certa forma mostra o quanto eu me importo com vc
+
             </p>
-
-            <button id="startButton">
-                Abrir 💜
-            </button>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Conteúdo -->
-    <main id="content">
+    <audio
+    id="player"
+    src="assets/music/whisky-e-teias.mp3">
+    </audio>
 
-        <!-- Primeiro presente -->
-        <section class="memory">
+</section>
 
-            <h2>Lembrança 1</h2>
+<footer>
 
-            <button class="reveal-btn">
-                Revelar 🎁
-            </button>
+    Feito com muito amor 💜
 
-            <div class="hidden-content">
+</footer>
 
-                <img
-                    src="assets/images/presente.jpg"
-                    alt="Presente de Dia dos Namorados">
+</main>
 
-                <p>
-                    eu sei que sempre falo isso, mas essa foi a coisa mais incrível que já recebi na minha vida, e aprecio mais ainda por ter vindo de você.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- Segundo presente -->
-        <section class="memory">
-
-            <h2>Lembrança 2</h2>
-
-            <button class="reveal-btn">
-                Revelar 🎀
-            </button>
-
-            <div class="hidden-content">
-
-                <img
-                    src="assets/images/kitty.jpg"
-                    alt="Desenho">
-
-                <p>
-                    por mais q a gnt não estávamos juntos na época, eu guardei isso como se fosse a coisa mais importante pra mim, pq eu gostava muito de vc, e receber isso me deixou de uma forma que ninguém nunca me viu.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- Música -->
-        <section id="music">
-
-            <h2>🎵 Whisky e Teias</h2>
-
-            <p>
-                eu sei que essa música não tem muito haver, até pq nós não temos uma música nossa ainda.. mas eu gosto muito dela pq me faz lembrar de você e de certa forma mostra o quanto eu me importo com vc
-            </p>
-
-            <audio id="player" src="assets/music/whisky-e-teias.mp3"></audio>
-
-            <!-- O player bonito será feito no JavaScript -->
-
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
